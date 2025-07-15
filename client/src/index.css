@@ -1,0 +1,123 @@
+/* Modern CSS Reset and Theme */
+:root {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary: #fbbf24;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --bg: #f4f6fa;
+  --surface: #fff;
+  --text: #222;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --radius: 12px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--primary-dark);
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.12);
+}
+
+input, select, textarea {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.7em 1em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  background: var(--surface);
+  color: var(--text);
+  width: 100%;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0.5em 0 0.3em 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2em;
+  margin: 1.5em auto;
+  max-width: 420px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .card, .container {
+    padding: 1em;
+  }
+}

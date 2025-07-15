@@ -1,0 +1,17 @@
+{
+  "name": "fixithub-gocomet",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000C\u0000a\u0000m\u0000p\u0000u\u0000s\u0000F\u0000i\u0000x\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
