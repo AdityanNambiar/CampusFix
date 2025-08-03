@@ -23,13 +23,23 @@ CampusFix is a modern web platform that transforms how campus maintenance issues
 This clear workflow ensures that every maintenance issue is addressed promptly, with full transparency for all parties involved.
 
 ## Features
-- Student registration and login
-- Complaint submission and real-time tracking
-- Admin dashboard for managing users and complaints
-- Maintenance staff dashboard for handling assigned tasks
-- Automated escalation of unresolved complaints
-- Email notifications for important updates
-- Secure authentication and authorization
+**Frontend**
+Role-Based Dashboards: Custom layouts and UI flows for students, staff, and admins.
+
+Real-Time Complaint Tracking: Instant DOM updates for complaint statuses without page reloads.
+
+Responsive & Accessible UI: Mobile-first design using Flexbox/Grid for cross-device compatibility.
+
+Dynamic Forms: Client-side validation and API-integrated complaint submission.
+
+**Backend**
+Scalable API Architecture: Node.js + Express.js backend with controller-service separation.
+
+Role-Based Access Control: Secured endpoints with JWT authentication.
+
+Automated Escalations: node-cron jobs trigger email alerts and generate PDF reports for unresolved complaints.
+
+MongoDB + Mongoose Models: Structured data handling for efficient storage and retrieval.
 
 ## Tech Stack
 - **Frontend:** React, Vite, JavaScript, CSS
@@ -101,3 +111,4 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 This project is licensed under the MIT License.
+
